@@ -227,7 +227,10 @@ img {
   color: var(--title-color);
   cursor: pointer;
 }
-
+.nav .nav__button{
+  background-color: var(--title-color);
+  border: none;
+}
 /* Show menu */
 .show-menu{
   right: 0;
@@ -311,7 +314,16 @@ img {
 }
 .button i{
   font-size: 1.25rem;
-  transition: ;
+  transition: transform .3s;
+}
+.button__flex{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: .5rem;
+}
+.button__flex:hover i{
+  transform: translateX(.25rem);
 }
 
 /*=============== LOGOS ===============*/
